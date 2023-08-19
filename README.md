@@ -2,7 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+a fullstack app base 
+[`car-rent-figma`](https://www.figma.com/file/1H0CqqHXNogN0c5E6WpEqI/Car-Rent-Website-Design---Pickolab-Studio-(Community)?type=design&node-id=0%3A1)
+
+First make sure you run the back-end
+[`car-rent_server`](https://github.com/AmirhoseinBrz/car-rent_server)
+and 
+run the development server:
 
 ```bash
 npm run dev
