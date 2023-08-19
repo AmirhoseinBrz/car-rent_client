@@ -2,26 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.swiper .swiper-wrapper > div {
+  width: auto !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+select {
+  margin-left: -5px;
+}
+@layer components {
+  .btn-primary {
+    @apply text-white px-5 py-2.5 font-semibold rounded-[4px] max-lg:text-sm bg-primary-500;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html {
+  scroll-behavior: smooth;
+}
+
+input {
+  outline: none;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+input[type="range"] {
+  accent-color: #3563e9;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3563e9;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #cbd5e0;
 }
